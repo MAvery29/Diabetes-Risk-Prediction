@@ -24,4 +24,15 @@ Multiclass classification model predicting diabetes status
 - Avoiding data leakage from prior diagnosis columns
 
 ## What I Learned
-...
+
+1. The biggest difference between a Kaggle dataset and a real world 
+dataset is how incomplete the data is and the importance of cleaning it properly.
+
+2. I learned that data leakage is bad because the model will not be 
+accurate in real world predictions. I avoided this by removing columns 
+that revealed prior diabetes diagnoses.
+
+3. I learned that class imbalance happens when the model doesn't have 
+enough samples. In this project the model had 3,484 No Risk, 616 Diabetic 
+and 121 Borderline samples, and the model had trouble telling the 
+difference between all three classes even after using SMOTE.
